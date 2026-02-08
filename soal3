@@ -1,0 +1,12 @@
+uang_awal = 200000
+target_uang = 400000
+bunga = 0.10
+uang = uang_awal
+tahun = 0
+print("Tahun | Jumlah Uang")
+print("-------------------")
+while uang < target_uang:
+    tahun += 1
+    uang = uang * (1 + bunga)
+    print(tahun, "   |", round(uang, 2))
+print("\nWaktu yang dibutuhkan:", tahun, "tahun")
