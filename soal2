@@ -1,0 +1,45 @@
+# Data awal
+berat_awal = 25
+harga_beli_awal = 650000
+harga_jual_awal = 685000
+
+# Modal awal
+modal_awal = berat_awal * harga_beli_awal
+print("Modal awal:", modal_awal)
+
+# Nilai jual awal
+nilai_jual_awal = berat_awal * harga_jual_awal
+print("Nilai jual awal:", nilai_jual_awal)
+
+# Keuntungan awal
+keuntungan_awal = nilai_jual_awal - modal_awal
+print("Keuntungan awal:", keuntungan_awal)
+
+# Persentase keuntungan awal
+persen_keuntungan_awal = (keuntungan_awal / modal_awal) * 100
+print("Persentase keuntungan awal:", persen_keuntungan_awal, "%")
+
+print("-" * 40)
+
+# Pembelian kedua
+berat_tambahan = 15
+harga_beli_kedua = 685000
+
+modal_kedua = berat_tambahan * harga_beli_kedua
+total_modal = modal_awal + modal_kedua
+print("Total modal:", total_modal)
+
+# Total emas dan harga jual baru
+total_berat = 40
+harga_jual_baru = 715000
+
+nilai_jual_total = total_berat * harga_jual_baru
+print("Nilai jual total:", nilai_jual_total)
+
+# Keuntungan total
+keuntungan_total = nilai_jual_total - total_modal
+print("Keuntungan total:", keuntungan_total)
+
+# Persentase keuntungan total
+persen_keuntungan_total = (keuntungan_total / total_modal) * 100
+print("Persentase keuntungan total:", persen_keuntungan_total, "%")
