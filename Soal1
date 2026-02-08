@@ -1,0 +1,14 @@
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.linspace(0, 10)
+y = np.sin(x)
+z = np.cos(x)
+plt.plot(x, y, 'r--')
+plt.plot(x, z, 'b')
+plt.xlabel('Radians')
+plt.ylabel('Values')
+plt.title('Plotting Demonstration')
+plt.legend(['Sin', 'Cos'])
+plt.grid()
+plt.show()
