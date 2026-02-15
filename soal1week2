@@ -1,0 +1,12 @@
+#berat badan dalam kilogram 
+def hitung(): 
+    berat_badan = float(input("Berat Badan(kg) = ")) 
+#tinggi badan harus dalam meter 
+    tinggi_badan = float(input("Tinggi Badan(cm) = ")) 
+#ubah tinggi badan dari centimeter ke meter harus dibagi 100 
+    BMI = berat_badan / (tinggi_badan / 100) ** 2 
+    return BMI 
+
+hasil_BMI = hitung() 
+print(f"Nilai BMI Anda: {hasil_BMI:.2f}")
+
