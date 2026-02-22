@@ -1,0 +1,15 @@
+Algoritma Jenis_Persamaan_Akar
+Deklarasi 
+	Float a, b, c.
+Deskripsi 
+START
+	INPUT  a, b, c.
+	D<- b*b-4*a*c
+	IF D>0 THEN 
+		PRINT Akar real dan berlainan
+	ELSE IF D=0 THEN
+		PRINT Akar real dan kembar
+	ELSE 
+		PRINT Akar Imajener
+	ENDIF
+END
