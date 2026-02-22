@@ -1,0 +1,29 @@
+Algoritma Faktorial
+
+	Deklarasi 
+		n: integer
+		i: integer
+		factorial: integer
+	Deskripsi
+
+START  
+	INPUT n
+	faktroial←1
+	i←1
+	
+	IF(n>0) THEN
+		OUTPUT”tidak factorial”
+	ELSE
+		IF(n=0) THEN
+			OUTPUT “factorial”
+		ELSE 
+			IF(n=1) THEN
+				OUTPUT “faktorial”
+			ELSE
+				WHILE(i←n)DO
+					faktorial=faktorial*1
+					i=i+1
+				ENDWHILE
+				OUTPUT “faktorial”
+END
+
