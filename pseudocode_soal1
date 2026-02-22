@@ -1,0 +1,22 @@
+Algoritma cek_bilangan_prima
+
+	Deklarasi 
+		n: integer
+		i: integer
+	Deskripsi
+		INPUT n
+
+		IF(n←1)THEN
+			OUTPUT”bukan bilangan prima”
+		ELSE
+			i=2
+			WHILE (i<n) DO
+				IF(n mod i=0) THEN
+					OUTPUT “bukan bilangan prima”
+					STOP
+				ENDIF
+				i=i+1
+			ENDWHILE
+			OUTPUT”bilangan prima”
+		ENDIF
+END
