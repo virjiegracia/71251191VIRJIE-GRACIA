@@ -1,0 +1,12 @@
+try: 
+    bulan = int(input('Bulan ke: ')) 
+    if bulan < 1 or bulan > 12: 
+        print('Bulan tidak valid!') 
+    elif bulan in [1, 3, 5, 7, 8, 10, 12]: 
+        print('Jumlah hari: 31') 
+    elif bulan in [4, 6, 9, 11]: 
+        print('Jumlah hari: 30') 
+    else: 
+        print('Jumlah hari: 28') 
+except: 
+    print('Data tidak ada!')
