@@ -6,15 +6,7 @@ for i in range(n, 0, -1):
     print(math.factorial(i), end=" ")
     for j in range(i, 0, -1):
         print(j, end=" ")
-    print()  
+   print()  
  
-try: 
-    n = int(input('Masukkan nilai n: ')) 
-    if n < 1: 
-        print('Nilai n harus lebih dari 1') 
-    else: 
-        deret(n) 
-except: 
-    print('Input tidak valid') 
-
-
+if n < 1: 
+    print('Nilai n harus lebih dari 1') 
