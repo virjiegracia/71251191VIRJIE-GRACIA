@@ -1,0 +1,9 @@
+kalimat = input("Masukkan kalimat: ")
+
+kata_list = kalimat.split()
+
+terpendek = min(kata_list, key=len)
+terpanjang = max(kata_list, key=len)
+
+print("Terpendek:", terpendek)
+print("Terpanjang:", terpanjang)
