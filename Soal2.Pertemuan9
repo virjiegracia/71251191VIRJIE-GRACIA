@@ -1,0 +1,11 @@
+kalimat = input("Masukkan kalimat: ")
+kata_cari = input("Masukkan kata yang dicari: ")
+
+kalimat = kalimat.lower()
+kata_cari = kata_cari.lower()
+
+daftar_kata = kalimat.split()
+
+jumlah = daftar_kata.count(kata_cari)
+
+print(f"{kata_cari} ada {jumlah} buah")
