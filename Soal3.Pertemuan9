@@ -1,0 +1,7 @@
+def hsb(kalimat):
+    return " ".join(kalimat.split())
+
+kata= input("masukan kalimat:")
+hasil=hsb(kata)
+
+print(hasil)
