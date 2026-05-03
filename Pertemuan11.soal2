@@ -1,0 +1,21 @@
+total = 0
+jumlah = 0
+
+while True:
+    data = input("Masukkan bilangan (ketik 'done' untuk selesai): ")
+
+    if data == "done":
+        break
+
+    try:
+        angka = float(data)
+        total += angka
+        jumlah += 1
+    except ValueError:
+        print("Input tidak valid, masukkan angka atau 'done'.")
+
+if jumlah > 0:
+    rata_rata = total / jumlah
+    print("Rata-rata:", rata_rata)
+else:
+    print("Tidak ada bilangan yang dimasukkan.")
