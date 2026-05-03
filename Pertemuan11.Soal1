@@ -1,0 +1,7 @@
+def tiga_angka_terbaik(data):
+    data_urut = sorted(data, reverse=True)
+    return data_urut[:3]
+
+angka = [17, 88, 2, 10, 4, 22]
+hasil = tiga_angka_terbaik(angka)
+print(hasil)
