@@ -1,0 +1,15 @@
+nama_file = input("Masukkan nama file teks: ")
+try:
+    file = open(nama_file, "r")
+    isi = file.read()
+    file.close()
+
+    kata = isi.lower().split()
+    kata_unik = set(kata)
+
+    print("Kata-kata unik dalam file:")
+    for k in kata_unik:
+        print(k)
+
+except FileNotFoundError:
+    print("File tidak ditemukan.")
