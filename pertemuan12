@@ -1,0 +1,7 @@
+def IsiKamus(kamus):  
+tabel = "| key  | value | item |\n" + "|------|-------|-----
+|"  
+isi = [f"| {kunci:<4} | {nilai:<5} | {kunci:<4} |"   
+for kunci, nilai in kamus.items()]  
+return "\n".join([tabel] + isi)  
+print(IsiKamus({1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60})) 
