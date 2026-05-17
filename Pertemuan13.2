@@ -1,0 +1,23 @@
+data = ('Virjie Gracia Tumimomor', '71251191', 'Morut, Sulawesi Tengah')
+print("Data :", data)
+print("================")
+
+nama = data[0]
+nim = data[1]
+alamat = data[2]
+
+print("NIM    :", nim)
+print("NAMA   :", nama)
+print("ALAMAT :", alamat)
+print("================")
+
+tuple_nim = tuple(nim)
+print("NIM:", tuple_nim)
+
+nama_depan = nama.split()[0].lower()
+tuple_nama_depan = tuple(nama_depan)
+print("NAMA DEPAN:", tuple_nama_depan)
+print("================")
+
+nama_terbalik = tuple(reversed(nama.split()))
+print("NAMA TERBALIK:", nama_terbalik)
