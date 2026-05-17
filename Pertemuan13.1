@@ -1,0 +1,10 @@
+def cek_persamaan(tuple): 
+    if len(tuple) == 0: 
+        return False 
+    for i in range(1, len(tuple)): 
+        if tuple[i] != tuple[0]: 
+            return False 
+    return True 
+ 
+print(cek_persamaan((90,90,90,90)))
+print(cek_persamaan((90,90,85,90)))
