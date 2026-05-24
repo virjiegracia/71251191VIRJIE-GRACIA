@@ -1,0 +1,34 @@
+def analisis_aplikasi():  
+    n = int(input('Masukkan jumlah kategori: '))  
+  
+    data = {}  
+    dataApps = {}  
+  
+    for i in range(n):  
+        kategori = input(f'\nMasukkan nama kategori ke-{i+1}: ')  
+        print(f'Masukkan 5 nama aplikasi untuk kategori {kategori}:')  
+          
+        kategoriApps = []  
+        for j in range(5):  
+            namaApps = input(f'Aplikasi {j+1}: ')  
+            kategoriApps.append(namaApps)  
+            if namaApps in dataApps:  
+                dataApps[namaApps] += 1  
+            else:  
+                dataApps[namaApps] = 1      
+        data[kategori] = kategoriApps  
+         
+    print("\nDaftar Aplikasi per Kategori:")  
+    for kategori, aplikasi in data.items():  
+        print(f"- {kategori}: {', '.join(aplikasi)}")  
+  
+    print("\nAplikasi yang hanya muncul di SATU kategori:")  
+    aplikasi_unik = [apk for apk, jumlah in dataApps.items() if jumlah ==  
+1]  
+print(aplikasi_unik if aplikasi_unik else "Tidak ada")  
+if n >= 2:  
+print("\nAplikasi yang muncul tepat di DUA kategori: ")  
+aplikasiAda2 = [apk for apk, jumlah in dataApps.items() if jumlah  
+== 2]  
+print(aplikasiAda2 if aplikasiAda2 else "Tidak ada")  
+analisis_aplikasi()  
