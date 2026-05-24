@@ -1,0 +1,26 @@
+def isiFile(namaFile):  
+    try:  
+        with open(namaFile) as file:  
+            return set(file.read().lower().split())  
+    except FileNotFoundError:  
+        print(f"File '{namaFile}' tidak ditemukan!")  
+        return set()  
+    except:  
+        print(f"Gagal membaca file '{namaFile}'!")  
+        return set()  
+  
+def cekIsi():  
+    file1 = input("File pertama: ").strip()  
+    file2 = input("File kedua: ").strip()  
+      
+    cek1 = isiFile(file1)  
+    cek2 = isiFile(file2)  
+      
+    if not cek1 or not cek2:  
+        return  
+    yangSama = cek1 & cek2  
+      
+    print("\nKata yang sama di kedua file:")  
+    print(', '.join(sorted(yangSama)) if yangSama else "Tidak ada kata sama")  
+  
+cekIsi() 
