@@ -1,0 +1,15 @@
+def cek_prima(n, pembagian=2):
+    if n < 2:
+        return False
+    if pembagian > n ** 0.5:
+        return True
+    if n % pembagian == 0:
+        return False
+    return cek_prima(n, pembagian + 1)
+
+angka = int(input("Masukkan sebuah bilangan: "))
+
+if cek_prima(angka):
+    print(angka, "adalah bilangan prima")
+else:
+    print(angka, "bukan bilangan prima")
