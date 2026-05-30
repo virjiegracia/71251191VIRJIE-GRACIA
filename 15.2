@@ -1,0 +1,14 @@
+def cek_palindrom(teks):
+    teks = teks.replace(" ", "").lower()
+    if len(teks) <= 1:
+        return True
+    if teks[0] != teks[-1]:
+        return False
+    return cek_palindrom(teks[1:-1])
+
+kata = input("Masukkan kata atau kalimat: ")
+
+if cek_palindrom(kata):
+    print("Palindrom")
+else:
+    print("Bukan palindrom")
