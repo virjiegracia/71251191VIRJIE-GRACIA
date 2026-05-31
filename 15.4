@@ -1,0 +1,11 @@
+def jumlah_digit(angka):
+    if angka < 10:
+        return angka
+    else:
+        return (angka % 10) + jumlah_digit(angka // 10)
+number = 234
+#number = 172   #test cast
+#number = 141
+
+result = jumlah_digit(number)
+print(f"{number} = {result}") 
